@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Among the Space</title>
+    <link rel=" stylesheet" href="cs.css">
+</head>
+<body>
+    <div id="game-wrapper">
+        <canvas id="gameCanvas"></canvas>
+        <div class="overlay active" id="menu-overlay">
+            <div class="menu-panel">
+                <div class="menu-title">Among the Space</div>
+                <div class="menu-subtitle">~ Space Explorer ~</div>
+                <button class="menu-btn btn-start" id="btn-start">Start</button>
+                <button class="menu-btn" id="btn-options">Options</button>
+                <button class="menu-btn btn-exit" id="btn-exit">Exit</button>
+                <div style="color:#667;font-size:10px;margin-top:14px;">A/D = Move | Shift = Run | Space = Jump / Double Jump</div>
+            </div>
+        </div>
+        <div class="overlay hidden" id="options-overlay">
+            <div class="menu-panel">
+                <div class="menu-title" style="font-size:26px;">Options</div>
+                <div class="slider-group">
+                    <label>Master Volume <span class="val" id="val-master">80%</span></label>
+                    <input type="range" id="slider-master" min="0" max="100" value="80">
+                </div>
+                <div class="slider-group">
+                    <label>Music Volume <span class="val" id="val-music">60%</span></label>
+                    <input type="range" id="slider-music" min="0" max="100" value="60">
+                </div>
+                <div class="slider-group">
+                    <label>SFX Volume <span class="val" id="val-sfx">90%</span></label>
+                    <input type="range" id="slider-sfx" min="0" max="100" value="90">
+                </div>
+                <button class="menu-btn btn-back" id="btn-back-options">Back</button>
+            </div>
+        </div>
+        <div class="overlay hidden" id="gameover-overlay">
+            <div class="menu-panel">
+                <div class="menu-title" style="color:#ff5050;font-size:28px;">Game Over</div>
+                <div class="final-score" id="go-score">Score: 0</div>
+                <div class="coin-display" id="go-coins">Coins: 0</div>
+                <button class="menu-btn btn-start" id="btn-retry">Retry</button>
+                <button class="menu-btn btn-back" id="btn-menu-from-go">Main Menu</button>
+            </div>
+        </div>
+        <div class="overlay hidden" id="win-overlay">
+            <div class="menu-panel">
+                <div class="menu-title" style="color:#40ff80;font-size:30px;">Victory!</div>
+                <div class="menu-subtitle" style="color:#8f8;">Goal Star Reached!</div>
+                <div class="final-score" id="win-score">Score: 0</div>
+                <div class="coin-display" id="win-coins">Coins: 0</div>
+                <button class="menu-btn btn-start" id="btn-play-again">Play Again</button>
+                <button class="menu-btn btn-back" id="btn-menu-from-win">Main Menu</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="cs.js"></script>
+</body>
+</html>
