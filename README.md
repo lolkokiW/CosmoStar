@@ -1,0 +1,2 @@
+# CosmoStar
+browser game
