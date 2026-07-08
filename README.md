@@ -71,7 +71,12 @@ For development, using the **Live Server** extension in Visual Studio Code is re
 
 ## Screenshots
 
-Add gameplay screenshots here.
+<img width="935" height="511" alt="image" src="https://github.com/user-attachments/assets/9a1fe2d4-1f7b-4a34-98ff-1a37d5315df1" />
+<img width="941" height="512" alt="image" src="https://github.com/user-attachments/assets/9fbe12a1-f172-43a1-844c-eb1b8ff534c0" />
+<img width="941" height="512" alt="image" src="https://github.com/user-attachments/assets/6f4cc8b6-5db6-4be9-a61c-aaa30c37bf1c" />
+
+
+
 
 ## Future Improvements
 
