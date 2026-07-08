@@ -55,6 +55,7 @@ Some blocks contain special power-ups. Collecting one of these causes the astron
 
 1. Clone the repository:
 
+https://github.com/lolkokiW/CosmoStar.git
 
 2. Open the project folder.
 
