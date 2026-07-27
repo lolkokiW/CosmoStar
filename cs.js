@@ -24,12 +24,22 @@
     const goCoinsEl = document.getElementById('go-coins');
     const winScoreEl = document.getElementById('win-score');
     const winCoinsEl = document.getElementById('win-coins');
+     
+    const crazySDK = window.CrazyGames.SDK;
 
     const INTERNAL_W = 960;
     const INTERNAL_H = 540;
     canvas.width = INTERNAL_W;
     canvas.height = INTERNAL_H;
     ctx.imageSmoothingEnabled = false;
+
+    function onGamepLayStart() {
+        crazySDK.game.gameplayStart();
+    }
+
+    function onGameplayStop() {
+        crazySDK.game.gameplayStop();
+    }
 
     function resizeCanvas() {
         const wrapperW = wrapper.clientWidth;
